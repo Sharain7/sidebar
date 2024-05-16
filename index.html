@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxl-codepen"></i>
+                <span>SwinMarket</span>
+            </div>
+            <i class="bx bx-menu" id="hamburger"></i>
+            
+        </div>
+        <div class="logged-user">
+            <img src="me.jpeg" alt="put any photo" class="logged-user-img">
+            <div>
+                <p class="bold">Sharain K.</p>
+                <p>Admin</p>
+            </div>
+
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Overview</span>
+                </a>
+                <span class="tooltip">Overview</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+           <h1>Swinburne Market</h1>
+        </div>
+    </div>
+    
+</body>
+
+<script >
+
+    let hamburgerBtn = document.querySelector('#hamburger');
+    let sideBar = document.querySelector('.sidebar')
+    hamburgerBtn.onclick = ()=>{
+       sideBar.classList.toggle('active')
+    };
+
+
+</script>
+</html>
